@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0; 
+        padding: 0;  
+     }
+     .container {
+         max-width: 800px;
+         margin: 0 auto;
+         padding-left: 16px;
+         padding-right: 16px;
+     }
+    body {
+        background-color: #1d2031;
+        background: #f0f4ff;
+        font-family: sans-serif;
+    }
+    .grids {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+        gap: 15px;
+    }
+    .grid-mod {
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        box-sizing: border-box;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px rgb(113 77 255 / 3%), inset 0 0 20px rgb(229 228 255 / 28%);
+        height: 35vh;
+        /* text-align: center; */
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 10px;
+        position: relative;
+       
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+    .wrapper {
+        padding: 50px 0;
+    }
+    h3 {
+        margin-bottom: 15px;
+    }
+    .text {
+        margin-bottom: 55px;
+        font-size: 13px;
+        text-align: center;
+    }
+   .grid-mod a {
+        color: #6600ec;
+        text-decoration: none;
+        border-radius: 7px;
+        border: 1px solid #6600ec;
+        font-size: 13px;
+        width: 80%;
+        height: 40px;
+        text-align: center;
+        align-items: center;
+        line-height: 3;
+    }
+    .modal {
+        position: absolute;
+        padding: 5px 15px;
+        background: red;
+        border-radius: 4px;
+        color: white;
+        right: 15px;
+        top: -10px;
+    }
+    .modal p {
+        color:white;
+        font-size: 12px;
+    }
+    a:hover {
+        background:#6600ec;
+        color: white;
+        transition: 0.5s;
+    }
+    @media (max-width: 459px) {
+        h2 {
+            text-align:center;
+        }        
+    }
+</style>
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <h2>Изучайте англ язык!</h2>
+                <div class="grids">
+                    <div class="grid-mod">
+                        <h3>Всем првиет</h3>
+                        <p class="text">Ты кто?И что те надо?Скачайте по ссылке</p>
+                        <a href="#">Скачать</a>
+                        <div class="modal">
+                            <p>Метериал</p>
+                        </div>
+                    </div>
+                    <div class="grid-mod">
+                        <h3>Всем првиет</h3>
+                        <p class="text">Ты кто?И что те надо?Скачайте по ссылке</p>
+                        <a href="#">Скачать</a>
+                        <div class="modal">
+                            <p>Метериал</p>
+                        </div>
+                    </div>
+                    <div class="grid-mod">
+                        <h3>Всем првиет</h3>
+                        <p class="text">Ты кто?И что те надо?Скачайте по ссылке</p>
+                        <a href="#">Скачать</a>
+                        <div class="modal">
+                            <p>Метериал</p>
+                        </div>
+                    </div>
+                    <div class="grid-mod">
+                        <h3>Всем првиет</h3>
+                        <p class="text">Ты кто?И что те надо?Скачайте по ссылке</p>
+                        <a href="#">Скачать</a>
+                        <div class="modal">
+                            <p>Метериал</p>
+                        </div>
+                    </div>
+                    <div class="grid-mod">
+                        <h3>Всем првиет</h3>
+                        <p class="text">Ты кто?И что те надо?Скачайте по ссылке</p>
+                        <a href="#">Скачать</a>
+                        <div class="modal">
+                            <p>Метериал</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
