@@ -78,6 +78,7 @@
         color: white;
         right: 15px;
         top: -10px;
+        
     }
     .modal p {
         color:white;
@@ -93,13 +94,84 @@
             text-align:center;
         }        
     }
+    .slide {
+        height: 250px;
+    background-image: url(en.jpeg);
+    background-size: cover;
+    background-position: center;
+    /* border: 6px solid #03a9f4; */
+    border-radius: 10px;
+    margin-bottom: 35px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .slide::after {
+        content: "";
+    width: 100%;
+    height: 100%;
+    background: #312d78c7;
+    border-radius: 10px;
+    position: absolute;
+    }
+    .slide h2 {   
+        margin: 0;
+        color: white;
+        font-size: 18px;
+    }
+    .jiu {
+        position: absolute;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background: #3eee4b;;
+    box-shadow: 0 0 55px #26ff26;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    }
+    .video {
+        max-width: 800px;
+    display: flex;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 35px;
+    }
+    video {
+        width: 60%;
+    border: 10p;
+    border-radius: 10px;
+    margin-right: 20px;
+    }
+    .vie {
+        width: 300px;
+    background:#ffce3a;
+    border-radius: 10px;
+    }
 </style>
 <body>
     <header></header>
     <main>
         <div class="container">
             <div class="wrapper">
-                <h2>Изучайте англ язык!</h2>
+                <h2>Сайт еще в разработке))</h2>
+                <div class="slide">
+                    <div class="jiu">
+                        <h2>Изучайте английский язык!</h2>
+                    </div>
+                </div>
+                <!--Видео + блок-->
+                <div class="video">
+                    <video autoplay>
+                        <source src="./videoplayback (1).mp4">
+                    </video>
+                    <div class="vie"></div>
+                </div>
+                 <!--Видео + блок-->
+               
                 <div class="grids">
                     <div class="grid-mod">
                         <h3>Всем првиет</h3>
@@ -146,4 +218,32 @@
         </div>
     </main>
 </body>
+<script>
+    let slider_img = document.querySelector('.slider_img');
+    let btn = document.querySelector('.btn');
+    let two = document.querySelector('.btn-two');
+    let images = ['a.png','b.png','c.png','f.png'];
+    let i = 0;
+        btn.addEventListener('click', function() {
+            if(i <= 0) {
+            i = images.length;
+            i--;
+            return setImg();
+        }
+        });
+        two.addEventListener('click', function() {
+            if(i >= images.length - 1) {
+            i = -1;
+            i++;
+            return setImg();
+        }
+        });
+  
+       
+    
+    function setImg() {
+        return slider_img.setAttribute('src', 'images/' + images[i]);
+    }
+   
+</script>
 </html>
